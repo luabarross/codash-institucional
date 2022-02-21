@@ -4,8 +4,8 @@
 	<!-- Metas -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<title>Codash: WordPress Software House</title>
-	<meta name="description" content="Soluções para WordPress: Plugins, temas, integrações e +. Plugins e temas personalizados para o seu Negócio.">
+	<title>Codash: WordPress Software House | Plugins & Temas Personalizados</title>
+	<meta name="description" content="Soluções: Plugins personalizados para WordPress; Temas personalizados para WordPress; Integrações WooCommerce, BuddyPress, Elementor, WPML etc.">
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -36,7 +36,7 @@
 			</a>
 
 			<a href="#" class="open-nav">
-				<i></i>
+				<img src="assets/img/headset.svg">
 			</a>
 
 			<div class="clearfix"></div>
@@ -54,13 +54,13 @@
 
 			<div class="hero">
 				
-				<h1>Nós criamos<br> plugins &amp; temas<br> personalizados<br> para WordPress.</h1>
+				<h1>Nós criamos<br> plugins &amp; temas<br> personalizados<br> para <span>WordPress</span>.</h1>
 
 				<ul class="social-links">
-					<li><a href="https://profiles.wordpress.org/codash/" target="_blank">wp.org</a></li>
-					<li><a href="#" target="_blank">envato</a></li>
-					<li><a href="https://github.com/topics/codash" target="_blank">github</a></li>
-					<li><a href="https://www.linkedin.com/showcase/codash" target="_blank">linkedin</a></li>
+					<li><a class="profile" href="https://profiles.wordpress.org/codash/" target="_blank">wp.org</a></li>
+					<li><a class="envato" href="https://themeforest.net/user/codash_" target="_blank">envato</a></li>
+					<li><a class="github" href="https://github.com/codash-br" target="_blank">github</a></li>
+					<li><a class="linkedin" href="https://www.linkedin.com/showcase/codash" target="_blank">linkedin</a></li>
 				</ul>
 
 			</div> <!-- /.hero -->
@@ -70,20 +70,29 @@
 				<a href="single-project.html">
 					<div class="item">
 						<div class="item-img">
-							<img src="assets/img/image-placeholder.jpg" alt="" class="img-cover">
+							<img src="assets/img/home_blog_527.jpg" alt="" class="img-cover">
 						</div>
-						<h2 class="item-title">dok<br> blog</h2>
-						<h3 class="item-category">tema | plugin</h3>
+						<h2 class="item-title">captação<br> de leads</h2>
+						<ul class="list">
+							<li>Tema personalizado com layout Figma enviado pelo cliente;</li>
+							<li>Plugin para captação de leads e disparo e-mails (c/ PopUp);</li>
+							<li>Templates de e-mail personalizáveis para envio de eBooks;</li>
+							<li>Post type personalizado para FAQ's;</li>
+							<li>Otimização de SEO;</li>
+							<li>Testes de performance e relatórios;</li>
+							<li>Desenvolvimento integrado ao time DOK via Slack e WhatsApp;</li>
+						</ul>
+						<h3 class="item-category">dok blog</h3>
 					</div>
 				</a>
 
 				<a href="single-project.html">
 					<div class="item">
 						<div class="item-img">
-							<img src="assets/img/image-placeholder.jpg" alt="" class="img-cover">
+							<img src="assets/img/ideias_futuro.jpg" alt="" class="img-cover">
 						</div>
-						<h2 class="item-title">ideias p.<br> o futuro</h2>
-						<h3 class="item-category">plugin | ajustes</h3>
+						<h2 class="item-title">integração<br> bbpress</h2>
+						<h3 class="item-category">ideias p. o futuro</h3>
 					</div>
 				</a>
 
@@ -124,8 +133,11 @@
 			</div> <!-- /.featured-works -->
 
 			<div class="cta">
-				<h1>Pronto para começar<br> o seu projeto?</h1>
-				<a href="contact.html" class="btn">fale conosco</a>
+				<img src="./assets/img/atendimento.jpg">
+				<div class="text">
+					<h1>Pronto para começar<br> o seu projeto?</h1>
+					<a href="#" class="btn open-nav2">fale conosco</a>
+				</div>
 			</div>
 
 		</div> <!-- /.container -->
@@ -136,7 +148,13 @@
 
 		<div class="container">
 
-			<p class="copyright">&copy; 2022 codash software house. todos os direitos reservados</p>
+			<p class="copyright">
+				&copy; 2022 Codash - Software House. Todos os direitos reservados.
+			</p>
+
+			<p class="cnpj">
+				CNPJ 18.287.907/0001-49
+			</p>
 
 			<div class="clearfix"></div>
 
@@ -150,15 +168,19 @@
 			
 			<a href="#" class="close-nav">&times;</a>
 
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">sobre</a></li>
-					<li><a href="portfolio.html">portfolio</a></li>
-					<!--<li><a href="blog-list.html">blog</a></li>-->
-					<li><a href="contact.html">contato</a></li>
-				</ul>
-			</nav>
+			<form action="#" class="contact-form">
+
+				<h2>Contato</h2>
+					
+				<input  name="name" placeholder="Nome *" type="text" required>
+				<input  name="email" placeholder="E-mail *" type="email" required>
+				<input  name="business" placeholder="Empresa" type="text">
+				<input  name="phone-number" placeholder="WhatsApp" type="tel">
+				<textarea name="message" placeholder="Nos conte um pouco sobre o seu projeto" required></textarea>
+				<input type="submit" value="enviar">
+				<div class="clearfix"></div>
+
+			</form> <!-- /.contact-form -->
 	
 		</div> <!-- /.aside-navigation -->
 

@@ -42,6 +42,8 @@ a {
 	transition: all .2s ease-in-out;
 }
 
+::selection { background: #fbff81; }
+
 .btn {
 	border-radius: 27.5px;
 	display: inline-block;
@@ -56,6 +58,10 @@ a {
 	width: 220px;
 }
 
+.contact-form {
+	padding: 32px;
+}
+
 .contact-form input,
 .contact-form textarea {
 	border: none;
@@ -63,7 +69,16 @@ a {
 }
 
 .contact-form input {
-	margin-bottom: 30px;
+	margin-bottom: 12px;
+}
+
+.contact-form h2 {
+	font-size: 2rem;
+	font-weight: 400;
+	text-transform: normal;
+	margin-bottom: 32px;
+	border-left: 4px solid #0073AA;
+	padding-left: 16px;
 }
 
 .contact-form input::placeholder,
@@ -82,7 +97,7 @@ a {
 	height: 50px;
 	line-height: 50px;
 	padding-left: 20px;
-	width: 48%;
+	width: 100%;
 }
 
 .contact-form input[name=name],
@@ -91,7 +106,7 @@ a {
 }
 
 .contact-form textarea {
-	height: 200px;
+	height: 135px;
 	padding: 25px;
 	width: 100%;
 }
@@ -115,7 +130,7 @@ a {
 	height: 50px;
 	letter-spacing: 3px;
 	line-height: 50px;
-	margin: 23px 0 0 0;
+	margin: 12px 0 0 0;
 	text-transform: uppercase;
 	transition: all .2s linear;
 	width: 220px;
@@ -496,16 +511,35 @@ a {
 /* =============== # CTA =============== */
 
 .cta {
-	text-align: center;
+	display: flex;
 	padding: 190px 0 210px 0;
 	width: 100%;
 }
 
-.cta h1 {
-	font-size: 3.75rem;
+.cta img {
+ flex: 1;
+}
+
+.cta .text {
+	flex: 1 0 45%;
+	padding-left: 5%;
+	padding-top: 23%;
+}
+
+.cta .text h1 {
+	font-size: 2.9rem;
 	font-weight: 400;
-	line-height: 1.2;
+	line-height: 1.3;
 	margin-bottom: 46px;
+}
+
+.cta .text .btn {
+	background-color: #46B450;
+}
+
+.cta .text .btn:hover {
+	background-color: #ffa654;
+	color: #FFF;
 }
 
 /* =============== # Featured Works =============== */
@@ -559,7 +593,8 @@ a {
 	text-transform: normal;
 }
 
-.footer-default .follow-us-links {
+.footer-default .follow-us-links, 
+.footer-default .cnpj {
 	float: right;
 }
 
@@ -584,6 +619,13 @@ a {
 	line-height: 1.1;
 }
 
+.hero h1 span {
+    background-image: url(../img/highlighter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hero .social-links {
 	list-style: none;
 	position: absolute;
@@ -597,6 +639,36 @@ a {
 	letter-spacing: .4px;
 	margin-bottom: 37px;
 	writing-mode: vertical-rl;
+	position: relative;
+}
+
+.hero .social-links li a::before {
+    position: absolute;
+    left: -48px;
+    top: calc( 50% - 16px );
+    writing-mode: horizontal-tb;
+	width: 32px;
+	height: 32px;
+}
+
+.hero .social-links li a:hover::before {
+	stroke: #0073AA;
+}
+
+.hero .social-links li a.envato::before {
+	content: url(../img/leaf.svg);
+}
+
+.hero .social-links li a.github::before {
+	content: url(../img/github.svg);
+}
+
+.hero .social-links li a.linkedin::before {
+	content: url(../img/linkedin.svg);
+}
+
+.hero .social-links li a.profile::before {
+	content: url(../img/profile.svg);
 }
 
 /* =============== # Navigation =============== */
@@ -628,35 +700,17 @@ a {
 	width: 100px;
 }
 
-.open-nav i {
-	height: 2px;
+.open-nav img {
 	left: 50%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 28%;
-}
-
-.open-nav i:before {
-	content: " ";
-	height: 2px;
-	position: absolute;
-	top: -9px;
-	width: 100%;
-}
-
-.open-nav i:after {
-	content: " ";
-	height: 2px;
-	position: absolute;
-	top: 9px;
-	width: 100%;
 }
 
 .close-nav {
 	float: right;
 	font-size: 1.3rem;
-	margin: 20px 40px 0 0;
+	margin: 32px 32px 0 0;
 }
 
 .aside-navigation-overlay {
