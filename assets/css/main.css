@@ -512,7 +512,7 @@ a {
 
 .cta {
 	display: flex;
-	padding: 190px 0 210px 0;
+	padding: 190px 0 80px 0;
 	width: 100%;
 }
 
@@ -549,7 +549,7 @@ a {
 	width: 100%;
 }
 
-.featured-works a:nth-of-type(5) .item {
+.featured-works a:nth-of-type(6) .item {
 	margin-bottom: 0;
 }
 
@@ -566,11 +566,11 @@ a {
 }
 
 .featured-works .item-category {
-	font-size: .6875rem;
+	font-size: 1rem;
 	font-family: Montserrat, sans-serif;
-	font-weight: 500;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	color: gray;
 }
 
 /* =============== # Footer =============== */
@@ -614,9 +614,10 @@ a {
 }
 
 .hero h1 {
+	font-family: 'Scheherazade New', sans-serif;
 	font-size: 5.625rem;
-	font-weight: 400;
-	line-height: 1.1;
+	font-weight: 700;
+	line-height: 1;
 }
 
 .hero h1 span {
@@ -884,3 +885,57 @@ a {
 	transition:  all .2s ease-in-out;
 }
 
+/* Aside */
+aside .container {
+	display: flex;
+	padding: 80px 0 80px 32px;
+}
+
+aside .container div:first-child {
+	flex: 1 0 calc( 100% - 350px );
+}
+
+aside .container div.widget-discord {
+	flex: 1 0 350px;
+}
+
+aside .container h2 {
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 1;
+}
+
+aside .container ul {
+	margin: 64px 32px;
+	list-style-type: none;
+}
+
+aside .container ul li {
+	padding-left: 46px;
+	position: relative;
+	margin-bottom: 12px;
+}
+
+aside .container ul li::before {
+	content: '>';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+}
+
+aside .container p {
+	padding: 0 64px 0 0;
+	line-height: 2;
+}
+
+aside .container a.comu {
+	color: #7289da;
+}
+
+.featured-works .list2 {
+	position: absolute;
+	top: 100%;
+	width: 350px;
+	list-style-type: none;
+}
