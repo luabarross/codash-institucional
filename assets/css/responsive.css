@@ -48,11 +48,6 @@ Table of Contents
 		width: 31.33%;
 	}
 
-	.blog .blog-item:nth-of-type(4) {
-		margin-right: 3%;
-		margin-left: 3%;
-	}
-
 	.blog .blog-item:nth-of-type(7) {
 		margin-left: 3%;
 		width: 65.66%;
@@ -64,7 +59,7 @@ Table of Contents
 @media(min-width: 1024px) {
 
 	.featured-works .item {
-		margin-bottom: 120px;
+		margin-bottom: 250px;
 		position: relative;
 		width: 45%;
 	}
@@ -120,37 +115,40 @@ Table of Contents
 		left: 0;
 	}
 
-	.featured-works a:nth-of-type(2) .item,
-	.featured-works a:nth-of-type(4) .item, 
+	.featured-works a:nth-of-type(2) .item, 
 	.featured-works a:nth-of-type(6) .item {
 		float: right;
 		margin-right: 100px;
 	}
 
 	.featured-works a:nth-of-type(2) .item .item-title {
-		left: -143px;
+		left: -342px;
+		text-align: right;
 	}
 
-	.featured-works a:nth-of-type(3) .item-img {
-		height: 470px;
-	}
-
-	.featured-works a:nth-of-type(3) .item {
+	.featured-works a:nth-of-type(3) .item, 
+	.featured-works a:nth-of-type(4) .item {
 		margin-left: 200px;
 		width: 66%;
 	}
 
-	.featured-works a:nth-of-type(3) .item .item-title {
+	.featured-works a:nth-of-type(3) .item .item-title, 
+	.featured-works a:nth-of-type(4) .item .item-title {
 		left: -160px;
 	}
-
-	.featured-works a:nth-of-type(4) .item .item-title, 
+ 
 	.featured-works a:nth-of-type(6) .item .item-title {
 		left: -135px;
 	}
 
 	.featured-works a:nth-of-type(5) .item .item-title {
 		right: -212px;
+	}
+
+	.featured-works .list-2 {
+		top: 70%;
+		left: -382px;
+		width: 400px;
 	}
 }
 
