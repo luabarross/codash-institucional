@@ -91,8 +91,8 @@ a {
 
 .contact-form input[name=name],
 .contact-form input[name=email],
-.contact-form input[name=business], 
-.contact-form input[name=phone-number] {
+.contact-form input[name=company], 
+.contact-form input[name=phonenumber] {
 	float: left;
 	height: 50px;
 	line-height: 50px;
@@ -101,14 +101,14 @@ a {
 }
 
 .contact-form input[name=name],
-.contact-form input[name=business] {
+.contact-form input[name=company] {
 	margin-right: 4%;
 }
 
 .contact-form textarea {
-	height: 135px;
-	padding: 25px;
-	width: 100%;
+    height: 135px;
+    padding: 35px 25px 25px 20px;
+    width: 100%;
 }
 
 .contact-form textarea {
@@ -121,19 +121,34 @@ a {
     width: 8px; 
 }
 
-.contact-form input[type=submit] {
-	cursor: pointer;
-	font-family: Montserrat, sans-serif;
-	float: right;
-	font-size: .6875rem;
-	font-weight: 500;
-	height: 50px;
-	letter-spacing: 3px;
-	line-height: 50px;
-	margin: 12px 0 0 0;
-	text-transform: uppercase;
-	transition: all .2s linear;
-	width: 220px;
+.contact-form .btn {
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    float: right;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: 3px;
+    line-height: 48px;
+    margin: 12px 0 0 0;
+    transition: all .2s linear;
+    width: 220px;
+}
+
+.contact-form .form-group {
+	position: relative;
+}
+
+.col-md-12 {
+    width: 100%;
+    height: 62px;
+}
+
+.form-group label.control-label {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    cursor: pointer;
+	opacity: .7;
 }
 
 .container {
@@ -154,7 +169,6 @@ a {
 
 .img-responsive {
     display: block;
-    max-width: 100%;
     height: auto;
 }
 
@@ -176,7 +190,7 @@ a {
 	font-weight: 400;
 	text-transform: normal;
 	margin-bottom: 60px;
-	border-left: 4px solid #0073AA;
+	border-left: 4px solid #1c2a46;
 	padding-left: 28px;
 }
 
@@ -221,29 +235,34 @@ a {
 	text-transform: normal;
 }
 
+.team {
+    margin-top: 64px;
+    display: flex;
+    gap: 18px;
+    max-width: 66%;
+    margin-bottom: -32px;
+}
+
 .team-member {
-	float: left;
-	height: 390px;
-	position: relative;
-	width: 33.333%;
+    float: left;
+    position: relative;
+    flex: 1;
+}
+
+.team-member img.img-cover {
+    border-radius: 100%;
 }
 
 .team-member .overlay {
-	left: 0;
-	height: 100%;
-	opacity: 0;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	transition: all .3s linear;
-	width: 100%;
-}
-
-.team-member .overlay .info {
-	left: 50%;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: -80px;
+    transition: all .3s linear;
+    width: 200px;
+    border-left: 2px solid;
+    padding-left: 16px;
+    padding-bottom: 8px;
 }
 
 .team-member:hover .overlay {
@@ -251,11 +270,17 @@ a {
 	opacity: 1;
 }
 
+.team-member:last-child .overlay {
+	opacity: 1;
+}
+
+.team-member:last-child:hover .overlay {
+	opacity: 0;
+}
+
 .team-member .overlay .info h2 {
-	font-size: 1.3125rem;
-	font-weight: 400;
-	margin-bottom: 5px;
-	text-transform: normal;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .team-member .overlay .info h3 {
@@ -263,6 +288,15 @@ a {
 	font-weight: 300;
 	letter-spacing: .1px;
 	text-transform: normal;
+}
+
+.team-member.voce {
+	margin-left: 40px;
+}
+
+.team-member.voce img {
+	border-radius: 0;
+	opacity: .2;
 }
 
 /* =============== # Blog List =============== */
@@ -697,16 +731,20 @@ a {
 .open-nav {
 	display: block;
 	float: right;
-	height: 100px;
+	height: 90px;
 	position: relative;
 	width: 100px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: black;
+	background-image: url('../img/argyle.png');
 }
 
 .open-nav img {
 	left: 50%;
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -30%);
 }
 
 .close-nav {
@@ -943,7 +981,7 @@ aside .container a.comu {
 
 .call-video {
     width: 180px;
-    height: 100px;
+    height: 80px;
 	background-color: #FF0000;
     border-radius: 6px;
     position: absolute;
@@ -955,8 +993,12 @@ aside .container a.comu {
     line-height: 21px;
 }
 
+.call-video:hover {
+	box-shadow: 2px 2px;
+}
+
 .play1 {
-    top: 57%;
+    top: 64%;
     left: -90px;
 }
 
@@ -965,12 +1007,33 @@ aside .container a.comu {
     right: -350px;
 }
 
+.text-danger {
+	color: hsl(348, 100%, 61%);
+}
+
+h2 sup {
+    position: absolute;
+    right: -25px;
+    font-size: 70%;
+}
+
+.item .arrow {
+    position: absolute;
+    right: -157px;
+    top: 59%;
+}
+
+.portfolio {
+    background-color: #000020;
+    padding: 64px 0 100px;
+	background-image: url('../img/3px-tile.png');
+}
+
 .playlist {
 	margin: 0 auto;
 	width: 832px;
 	height: 482px;
-	background-color: #FEFEFE;
-	border: 1px solid lightgray;
+	border: 1px solid black;
     border-radius: 6px;
 	padding: 16px;
 }
@@ -980,11 +1043,7 @@ aside .container a.comu {
     font-weight: 500;
     line-height: 1;
     margin: 20px 0 30px 0;
-    text-align: center;
-    color: gray;
-}
-
-.icone-play {
-	width: 100%;
-	text-align: center;
+    color: white;
+    display: flex;
+    gap: 32px;
 }

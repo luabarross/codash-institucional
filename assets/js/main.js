@@ -24,3 +24,26 @@ closeNav.addEventListener("click", function(){
 	asideNav.classList.remove("active");
 })
 
+function addEvents(){
+
+	const inputs = document.querySelectorAll(".form-group:not(.text-area) input.form-control");
+	
+	for ( var i = 0; i < inputs.length; i++ ) {
+		
+		inputs[i].addEventListener( "focus", function(e){
+
+			if ( '' !== e.target.value ) return;
+			let id = e.target.getAttribute("id");
+			document.querySelector('[for="'+ id +'"]').style.opacity = "0";
+		}, false );
+
+		inputs[i].addEventListener( "blur", function(e){
+
+			if ( '' !== e.target.value ) return;
+			let id = e.target.getAttribute("id");
+			document.querySelector('[for="'+ id +'"]').style.opacity = ".7";
+		}, false );
+	}
+}
+
+addEvents();

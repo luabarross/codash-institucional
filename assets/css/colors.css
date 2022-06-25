@@ -10,8 +10,8 @@ Table of Contents
 - # background #f8f8f8
 - # color #fff
 - # background #fff
-- # color #0073AA (accent color)
-- # background #0073AA
+- # color #1c2a46 (accent color)
+- # background #1c2a46
 
 ------------------------------------------------------*/
 
@@ -42,14 +42,13 @@ body,
 # background #191E23
 ------------------------------------------------------*/
 
-.open-nav,
 .contact-form input[type=submit],
 .btn {
-	background: #191E23;
+	background-color: #191E23;
 }
 
 .aside-navigation-overlay {
-	background: rgba(0, 0, 0, .7)
+	background-color: rgba(0, 0, 0, .7)
 }
 
 /*-----------------------------------------------------
@@ -121,7 +120,7 @@ body,
 }
 
 /*-----------------------------------------------------
-# color #0073AA
+# color #1c2a46
 ------------------------------------------------------*/
 
 .aside-navigation nav ul li a:hover,
@@ -133,11 +132,11 @@ body,
 .hero .social-links li a:hover,
 .next h2:hover,
 .contact-info li a:hover {
-	color: #0073AA;
+	color: #1c2a46;
 }
 
 /*-----------------------------------------------------
-# background #0073AA
+# background #1c2a46
 ------------------------------------------------------*/
 
 .open-nav:hover,
@@ -145,5 +144,5 @@ body,
 .contact-form input[type=submit]:hover,
 .btn:hover,
 .service-icon {
-	background: #0073AA;
+	background-color: #1c2a46;
 }
