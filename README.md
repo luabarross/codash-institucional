@@ -1,2 +1,2 @@
 # codash-institucional
-Site institucional da Codash.
+Projeto freelancer.
